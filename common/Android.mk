@@ -99,11 +99,12 @@ LOCAL_CFLAGS := -Ofast
 LOCAL_CFLAGS += -Wall -Wformat=2 -DNDEBUG -UNDEBUG -Wno-ignored-qualifiers -Werror
 LOCAL_CFLAGS += -Wno-unused-parameter
 
-LOCAL_CPPFLAGS := -Ofast -std=c++11 -fexceptions -frtti
+LOCAL_CPPFLAGS := -Ofast -std=c++14 -fexceptions -frtti
 
 LOCAL_SHARED_LIBRARIES := \
     libjpeg \
-    libz
+    libz \
+    liblog
 
 LOCAL_MODULE := libtigervnc
 LOCAL_MODULE_TAGS := optional
